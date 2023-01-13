@@ -36,3 +36,27 @@
     transform: rotate(360deg);
   }
 }
+
+.form-error {
+  border-left: 4px solid #dc3545;
+  background-color: #ffbbc2;
+  padding: 5px;
+}
+
+.input-error {
+  border: 2px solid #dc3545 !important;
+  background-color: #ffbbc2 !important;
+  color: #ffffff !important;
+}
+
+
+input:-webkit-autofill,
+input:-webkit-autofill:focus {
+  transition: background-color 600000s 0s, color 600000s 0s;
+}
+
+.input-error:-webkit-autofill {
+  border: 2px solid #dc3545 !important;
+  -webkit-text-fill-color: #ffffff !important;
+  -webkit-box-shadow: 0 0 0px 1000px #ffbbc2 inset !important;
+}
